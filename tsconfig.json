@@ -1,0 +1,12 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@astrojs/starlight/config": ["node_modules/@astrojs/starlight/config.d.ts"]
+    },
+    "types": ["astro/client"]
+  },
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"]
+}
